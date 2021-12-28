@@ -15,4 +15,19 @@
   height: 200px;
   border-radius: 50%;
   background-color: white;
+  cursor: pointer;
+  transition: background-color 1s ease-in-out;
+}
+
+.button:hover {
+  background-color: rgb(230, 230, 230);
+}
+
+.backgroundImage {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
 }
