@@ -7,8 +7,16 @@ function App() {
   return (
     <div className={styles.container}>
       <form className={styles.form}>
-        <button className={styles.button}>choose image</button>
-        <input className={styles.input} type="file" />
+        <button
+          onClick={(e) => {
+            e.preventDefault();
+            if (fileInputRef.current) fileInputRef.current.click();
+          }}
+          className={styles.button}
+        >
+          choose image
+        </button>
+        <input className={styles.input} type="file" ref={fileInputRef} />
       </form>
     </div>
   );
